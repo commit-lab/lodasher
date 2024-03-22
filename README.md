@@ -27,10 +27,14 @@ The specifics go out-of-date every once in a while, so it's best if you just Goo
 Then, run the following commands in the terminal
 
 ```sh
-# navigate to a folder where you are fine downloading this code
+# First, navigate to a folder where you are fine downloading this code
+
 git clone https://github.com/commit-lab/lodasher # This will download the code.
+
 cd lodasher # This will "change directories" into the project
+
 npm install # Install dependencies
+
 npm test # Run the unit tests
 ```
 
