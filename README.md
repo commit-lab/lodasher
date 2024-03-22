@@ -4,31 +4,39 @@ This is a coding exercise for getting a firm grasp on JavaScript fundamentals.
 
 We will do this by **implementing** some methods from a popular library called "Lodash".
 
+There are 2 places where you can use this exercise.
+
+1. Locally (on your computer) by cloning the [github repo](https://github.com/commit-lab/lodasher)
+2. Remotely in your web browser by forking the [replit](https://replit.com/@kan15/Lodasher)
+
 # How To Use This Repo
 
-## Prerequisites
+## Locally
 
-If you want to run this code on your machine, you'll need to install:
+If you want to run this code on your machine, you'll need to first install:
 
 - [git](https://www.google.com/search?q=how+to+install+git)
 - [node](https://www.google.com/search?q=how+to+install+node)
+
+(If you don't have these things installed already.)
 
 Figure out how to do that by Googling or asking ChatGPT!
 
 The specifics go out-of-date every once in a while, so it's best if you just Google for the most current information.
 
-Pro-tip: Don't be shy. Use ChatGPT to help you debug if you run into any errors. (It'll be faster than Googling a lot of the times.)
-
-## Running The Code
-
-If you have cloned this repo locally, run:
+Then, run the following commands in the terminal
 
 ```sh
-npm install
-npm test # This will run the unit tests.
+# navigate to a folder where you are fine downloading this code
+git clone https://github.com/commit-lab/lodasher # This will download the code.
+cd lodasher # This will "change directories" into the project
+npm install # Install dependencies
+npm test # Run the unit tests
 ```
 
-If you are working on this inside of replit.com:
+## Using Replit (Running In Your Browser)
+
+Navigate to the [Replit URL](https://replit.com/@kan15/Lodasher).
 
 1. open up the "Shell" (Bottom left under "Tools")
 2. Type `npm install` into the shell and press enter
