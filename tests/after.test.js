@@ -36,4 +36,14 @@ describe("after", function () {
     returnedFunction();
     expect(returnedFunction()).toBe("hello world");
   });
+
+  it("should not allow an n less than 0", function () {
+    const fn = jest.fn();
+    expect(function () {
+      lodasher.after(-1, fn);
+    }).toThrow();
+    expect(function () {
+      lodasher.after(-1000, fn);
+    }).toThrow();
+  });
 });

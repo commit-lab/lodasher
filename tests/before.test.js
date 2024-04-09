@@ -47,4 +47,18 @@ describe("before", function () {
       lodasher.before(-1000, fn);
     }).toThrow();
   });
+
+  it("should return the result of the last invocation", function () {
+    const returnedFunction = lodasher.before(3, function (a, b) {
+      return a + b;
+    });
+
+    const result1 = returnedFunction(1, 2);
+    const result2 = returnedFunction(3, 4);
+    const result3 = returnedFunction(5, 6);
+
+    expect(result1).toBe(3);
+    expect(result2).toBe(7);
+    expect(result3).toBe(7);
+  });
 });
