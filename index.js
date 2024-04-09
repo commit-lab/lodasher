@@ -235,6 +235,7 @@ module.exports.before = function (n, callback) {
  * when called, will invoke the supplied `callback` only after it
  * has been called `n` times.
  *
+ * ```
  * const contactList = [];
  * const addToContactListAfter3Times = after(3, function(name) {
  *   contactList.push(name);
@@ -247,6 +248,7 @@ module.exports.before = function (n, callback) {
  * addToContactListAfter3Times('zoe');
  *
  * console.log(contactList); // ['dean', 'zoe']
+ * ```
  */
 module.exports.after = function (n, callback) {
   // Your code here
