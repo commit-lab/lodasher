@@ -234,6 +234,21 @@ module.exports.before = function (n, callback) {
  * `after` is a higher order function that returns a function that,
  * when called, will invoke the supplied `callback` only after it
  * has been called `n` times.
+ *
+ * ```
+ * const contactList = [];
+ * const addToContactListAfter3Times = after(3, function(name) {
+ *   contactList.push(name);
+ * }
+ *
+ * addToContactListAfter3Times('joe');
+ * addToContactListAfter3Times('mary');
+ * addToContactListAfter3Times('jill');
+ * addToContactListAfter3Times('dean');
+ * addToContactListAfter3Times('zoe');
+ *
+ * console.log(contactList); // ['dean', 'zoe']
+ * ```
  */
 module.exports.after = function (n, callback) {
   // Your code here
